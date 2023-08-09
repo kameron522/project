@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Page</title>
+</head>
+<body>
+
+    {# this is a simple html page #}
+
+    {% if name == 'admin' %}
+        <p>You are admin</p>
+    {% elif name == 'Gholi' %}
+        <p>You are {{name}}</p>
+    {% else %}
+        <p>Hello User</p>
+    {% endif %}
+
+    <h3>{{ name|center:"15" }}</h3>
+</body>
+</html>
